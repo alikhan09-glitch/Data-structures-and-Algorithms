@@ -40,7 +40,8 @@ do
 			display(st); // calling display fucntion
 			break;
 	}
-}while(option != 5);
+}
+	while(option != 5);
 return 0;
 }
 
@@ -48,12 +49,12 @@ void push(int st[],int value) // defination of push funtion
 {
 	if(top == MAX-1)  // checking if top euals to MAX-1 then it is an overflow condition 
 	{			// we write a message the "stack is empty "
-		printf("\n Stack is FULL");
+	printf("\n Stack is FULL");
 	} 
 	else 
 	{
-		top = top + 1;  // if our stack is not empty then we increment our top by one 
-		st[top] = value; // and storing the value at the top of our stack
+	top = top + 1;  // if our stack is not empty then we increment our top by one 
+	st[top] = value; // and storing the value at the top of our stack
 	} 
 		
 }
@@ -73,7 +74,7 @@ int pop(int st[])  // defination of pop function
 	}
 
 }
-void display(int st[])  // defination of Display funtion
+ void display(int st[])  // defination of Display funtion
 {
 	int i ; 
 	if(top == -1)
@@ -87,7 +88,7 @@ void display(int st[])  // defination of Display funtion
 	}
 
 }
-int peek(int st[])  // defination of peek funtion
+ int peek(int st[])  // defination of peek funtion
 {
 	if(top == -1 )				// checking  if stack is epty or not
 	{
